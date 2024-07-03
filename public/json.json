@@ -1,26 +1,19 @@
 [
     
       {
-        "_id": 1,
+       
           "name": "Wireless Bluetooth Headphones",
           "description": "High-quality wireless Bluetooth headphones with noise cancellation and 20-hour battery life.",
           "price": 99.99,
           "category": "Electronics",
           "availability": "In Stock",
           "image_url": "https://i.ibb.co/YRcThSj/gggg44g.png",
-          "rating": 4.5,
-          "reviews": {
-            "review_5001": {
-              "user": "John Doe",
-              "rating": 5,
-              "comment": "Amazing sound quality and battery life!"
-            },
-            "review_5002": {
-              "user": "Jane Smith",
-              "rating": 4,
-              "comment": "Comfortable to wear, but a bit pricey."
-            }
-          }
+          
+          "image":"https://i.ibb.co/NWddk9J/images-2.jpg",
+          "user": "Dana White",
+          "rating2": 5,
+          "comment": "Works perfectly with my smart home system."
+        
         },
         {
            "_id": 2,
@@ -31,21 +24,16 @@
           "availability": "In Stock",
           "image_url": "https://i.ibb.co/TvC14Yh/im44ages-2.png",
           "rating": 4.8,
-          "reviews": {
-            "review_5003": {
+         
               "user": "Alice Johnson",
-              "rating": 5,
-              "comment": "Keeps my drinks cold all day. Highly recommend!"
-            },
-            "review_5004": {
-              "user": "Bob Brown",
-              "rating": 4,
-              "comment": "Durable and easy to clean."
-            }
-          }
+             "image": "https://i.ibb.co/NWddk9J/images-2.jpg",
+              "comment": "Keeps my drinks cold all day. Highly recommend!",
+             "rating2": 5
+          
+          
         },
         {
-            "_id": 3,
+          
           "name": "Smart LED Light Bulb",
           "description": "Smart LED light bulb with adjustable brightness and color settings, compatible with Alexa and Google Assistant.",
           "price": 15.99,
@@ -53,19 +41,32 @@
           "availability": "Out of Stock",
           "image_url": "https://i.ibb.co/Bwt45SM/rrr.png",
           "rating": 4.3,
-          "reviews": {
-            "review_5005": {
-              "user": "Chris Evans",
-              "rating": 4,
-              "comment": "Great features, but had some issues with the initial setup."
-            },
-            "review_5006": {
+          
+          
+              "image":"https://i.ibb.co/NWddk9J/images-2.jpg",
               "user": "Dana White",
-              "rating": 5,
+              "rating2": 5,
               "comment": "Works perfectly with my smart home system."
-            }
+            
+          
+        },
+        {
+          
+          "name": "Smart LED Light Bulb",
+          "description": "Smart LED light bulb with adjustable brightness and color settings, compatible with Alexa and Google Assistant.",
+          "price": 15.99,
+          "category": "Home Automation",
+          "availability": "Out of Stock",
+          "image_url": "https://i.ibb.co/Bwt45SM/rrr.png",
+          "rating": 4.3,
+           
+              "image":"https://i.ibb.co/NWddk9J/images-2.jpg",
+              "user": "Dana White",
+              "rating2": 5,
+              "comment": "Works perfectly with my smart home system."
+            
           }
-        }
+        
     
       
 ]

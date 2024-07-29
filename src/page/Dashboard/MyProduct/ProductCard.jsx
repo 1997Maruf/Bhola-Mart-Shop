@@ -26,7 +26,7 @@ const ProductCard = ({product}) => {
             //   "Your file has been deleted.",
             //    "success"
             // )
-           fetch(`http://localhost:5000/productList/${_id}`,{
+           fetch(`https://bhola-mart-shop-server.vercel.app/productList/${_id}`,{
             method: 'DELETE'
            } )
            .then(res => res.json())

@@ -9,7 +9,7 @@ const MyProduct = () => {
     console.log(products);
    
     useEffect(() => {
-      fetch(`http://localhost:5000/productLis/?email=${user?.email}`)
+      fetch(`https://bhola-mart-shop-server.vercel.app/productLis/?email=${user?.email}`)
         .then((res) => res.json())
         .then((data) => setProducts(data));
     }, [user?.email]);

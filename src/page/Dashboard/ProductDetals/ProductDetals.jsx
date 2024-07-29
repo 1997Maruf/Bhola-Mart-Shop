@@ -16,7 +16,7 @@ const ProductDetals = () => {
     const [userInfo, setUserInfo] = useState([]);
    const {_id} = userInfo;
       console.log(userInfo._id);
-  const url = `http://localhost:5000/users/${user?.email}`;
+  const url = `https://bhola-mart-shop-server.vercel.app/users/${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

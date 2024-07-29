@@ -19,7 +19,7 @@ const Shop = () => {
     console.log(numberOfPages);
     const pages = [...Array(numberOfPages).keys()];
     useEffect(() => {
-      fetch(`http://localhost:5000/productLis?page=${currentPage}&size=${itemsPerPage}`)
+      fetch(`https://bhola-mart-shop-server.vercel.app/productLis?page=${currentPage}&size=${itemsPerPage}`)
         .then((res) => res.json())
         .then((data) => setProducts(data));
     }, [currentPage,itemsPerPage]);

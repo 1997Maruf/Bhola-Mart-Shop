@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: 'shop',
         element: <Shop></Shop>,
-        loader: () => fetch('http://localhost:5000/productCount')
+        loader: () => fetch('https://bhola-mart-shop-server.vercel.app/productCount')
       },
       {
         path: 'login',
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
       {
         path:'detals/:id',
         element:<ProductDetals></ProductDetals>,
-        loader:({params}) => fetch(`http://localhost:5000/productLis/${params.id}`)
+        loader:({params}) => fetch(`https://bhola-mart-shop-server.vercel.app/productLis/${params.id}`)
       }
     ],
   },
@@ -76,7 +76,7 @@ const router = createBrowserRouter([
         {
           path:'update/:id',
           element:<EdtProduct></EdtProduct>,
-          loader:({params}) => fetch(`http://localhost:5000/productList/${params.id}`)
+          loader:({params}) => fetch(`https://bhola-mart-shop-server.vercel.app/productList/${params.id}`)
         },
         {
           path:"orderProduct",

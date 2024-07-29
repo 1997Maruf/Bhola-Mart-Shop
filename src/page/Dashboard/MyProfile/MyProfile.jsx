@@ -19,9 +19,9 @@ const MyProfile = () => {
   const [userInfo, setUserInfo] = useState([]);
 
   console.log(userInfo);
-  // const url = `http://localhost:5000/users/${user?.email}`;
+  // const url = `https://bhola-mart-shop-server.vercel.app/users/${user?.email}`;
   useEffect(() => {
-    fetch(`http://localhost:5000/users/${user?.email}`)
+    fetch(`https://bhola-mart-shop-server.vercel.app/users/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setUserInfo(data));
   }, [user?.email]);

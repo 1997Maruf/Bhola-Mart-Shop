@@ -18,7 +18,7 @@ const OrderProductCard = ({ product }) => {
   console.log("deliveryMan", deliveryMans);
 
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://bhola-mart-shop-server.vercel.app/users")
       .then((res) => res.json())
       .then((data) => {
         const deliveryMan = data.filter((man) => man.role === "delivery");

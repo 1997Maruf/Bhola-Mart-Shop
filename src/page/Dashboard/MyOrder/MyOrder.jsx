@@ -10,7 +10,7 @@ const MyOrder = () => {
     const { _id } = userInfo;
     console.log(_id);
     console.log(userInfo);
-    const url = `http://localhost:5000/user/${user?.email}`;
+    const url = `https://bhola-mart-shop-server.vercel.app/user/${user?.email}`;
     useEffect(() => {
       fetch(url)
         .then((res) => res.json())
@@ -21,9 +21,9 @@ const MyOrder = () => {
     const [productsInfos, setUserProductsInfos] = useState([]);
 
   console.log(productsInfos);
-  // const url = `http://localhost:5000/users/${user?.email}`;
+  // const url = `https://bhola-mart-shop-server.vercel.app/users/${user?.email}`;
   useEffect(() => {
-    fetch(`http://localhost:5000/userOrderProducts/${userInfo._id}`)
+    fetch(`https://bhola-mart-shop-server.vercel.app/userOrderProducts/${userInfo._id}`)
       .then((res) => res.json())
       .then((data) => setUserProductsInfos(data));
   }, [userInfo._id]);

@@ -9,7 +9,7 @@ const Banner = () => {
 
     
     return (
-        <div className="-mt-8">
+        <div className="">
            <Carousel className="pt-9">
                 <div >
                     <img src={image1} />

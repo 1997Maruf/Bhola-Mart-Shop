@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const NavBar = () => {
@@ -25,26 +25,22 @@ const NavBar = () => {
   const link = (
     <>
       <li>
-        <NavLink to="/"> Home</NavLink>
+        <NavLink to="/" className="font-bold"> Home</NavLink>
       </li>
       <li>
-        <NavLink to="/shop"> Shop</NavLink>
-      </li>
-
-      <li>
-        <NavLink to="/login">Login</NavLink>
+        <NavLink to="/shop" className="font-bold"> Shop</NavLink>
       </li>
       <li>
-        <NavLink to="/sign-up">SignUp</NavLink>
+        <NavLink to="/login" className="font-bold">Login</NavLink>
       </li>
       <li>
-        <NavLink to="/dashboard">Dashboard</NavLink>
+        <NavLink to="/sign-up" className="font-bold">SignUp</NavLink>
       </li>
     </>
   );
   return (
     
-    <div className="navbar bg-base-100 lg:w-full sm:w-[485px]">
+    <div className="navbar bg-base-100 lg:w-full fixed z-10  rounded-b-full bg-opacity-20 border-b-2	border-zinc-900	min-h-3	 backdrop-blur-3xl px-20">
     <div className="navbar-start">
       <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -70,15 +66,15 @@ const NavBar = () => {
           {link}
         </ul>
       </div>
-      <a className="btn btn-ghost text-2xl font-bold">
-        <span>PARCEL</span>
-        <span>PRo</span>
-      </a>
+      <Link to="/" className="btn btn-ghost text-2xl font-bold">
+        <span>BHOLA MART</span>
+        <span className="text-lime-700">SHOP</span>
+      </Link>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">{link}</ul>
     </div>
-    
+  
     <div className="navbar-end">
     <label className="cursor-pointer grid place-items-center mr-8">
         <input
@@ -117,6 +113,7 @@ const NavBar = () => {
           <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
       </label>
+    
       {user ? (
         <>
           <div className="lg:mr-36">
@@ -128,7 +125,7 @@ const NavBar = () => {
                     role="button"
                     className="btn btn-ghost btn-circle"
                   >
-                    <img alt="img" className="rounded-full " src={user?.photoURL} />
+                    <img alt="img" className="rounded-full border-2 border-slate-900 " src={user?.photoURL} />
                   </div>
                   <ul
                     tabIndex={0}
@@ -137,6 +134,9 @@ const NavBar = () => {
                    
                     <li>
                       <p>{user?.displayName} </p>
+                    </li>
+                    <li>
+                       <NavLink to="/dashboard">Dashboard</NavLink>
                     </li>
                     <li>
                       <button onClick={handelLogOut} className="btn mr-3">

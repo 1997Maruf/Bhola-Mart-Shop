@@ -66,7 +66,7 @@ const NavBar = () => {
           {link}
         </ul>
       </div>
-      <Link to="/" className="btn btn-ghost text-2xl font-bold">
+      <Link to="/" className="btn btn-ghost lg:text-2xl sm:text-[5px] font-bold">
         <span>BHOLA MART</span>
         <span className="text-lime-700">SHOP</span>
       </Link>
@@ -125,7 +125,7 @@ const NavBar = () => {
                     role="button"
                     className="btn btn-ghost btn-circle"
                   >
-                    <img alt="img" className="rounded-full border-2 border-slate-900 " src={user?.photoURL} />
+                    <img alt="img" className="rounded-full border-2 sm:mr-4 border-slate-900 " src={user?.photoURL} />
                   </div>
                   <ul
                     tabIndex={0}
